@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva para o Acampamento da Juventude</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('IMG-20250118-WA0222.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #countdown {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            font-size: 0.8em;
+        }
+        .footer marquee {
+            width: 100%;
+        }
+        a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Prepara-se estamos em contagem regressiva.</h1>
+        <div id="countdown"></div>
+        <p>Já confirmou a sua presença? Se Não, <a href="https://www.facebook.com/61558968033674/posts/pfbid0Me1W7wrD3URoyAjA3fS37foC6BgqJ3mmyhi5ytNaPk2J5w1qqSgK8FygoLzGFvPRl/?app=fbl" target="_blank">clique no Link e confirme já a sua presença</a>.</p>
+    </div>
+    <div class="footer">
+        <marquee>Para mais informações entre em contacto com a direção do seu Pastorado, Congregação, Ponte de pregação ou deixa uma Sms na página da Sociedade de jovens do Sínodo local de Viana. "Acampamento da Juventude do Sínodo local de Viana"</marquee>
+    </div>
+    <script>
+        const countdownDate = new Date("2025-02-13T00:00:00").getTime();
+
+        const interval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            if (distance < 0) {
+                clearInterval(interval);
+                document.getElementById("countdown").innerHTML = "O evento começou!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva para o Acampamento da Juventude</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('IMG-20250118-WA0222.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #countdown {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            font-size: 0.8em;
+        }
+        .footer marquee {
+            width: 100%;
+        }
+        a {
+            color: #00ff88;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Prepara-se estamos em contagem regressiva.</h1>
+        <div id="countdown"></div>
+        <p>Já confirmou a sua presença? Se Não, <a href="https://www.facebook.com/61558968033674/posts/pfbid0Me1W7wrD3URoyAjA3fS37foC6BgqJ3mmyhi5ytNaPk2J5w1qqSgK8FygoLzGFvPRl/?app=fbl" target="_blank">clique no Link e confirme já a sua presença</a>.</p>
+    </div>
+    <div class="footer">
+        <marquee>Para mais informações entre em contacto com a direção do seu Pastorado, Congregação, Ponte de pregação ou deixa uma Sms na página da Sociedade de jovens do Sínodo local de Viana. "Acampamento da Juventude do Sínodo local de Viana"</marquee>
+    </div>
+    <script>
+        const countdownDate = new Date("2025-02-13T00:00:00").getTime();
+
+        const interval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            if (distance < 0) {
+                clearInterval(interval);
+                document.getElementById("countdown").innerHTML = "O evento começou!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
